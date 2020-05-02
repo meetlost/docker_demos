@@ -1,0 +1,10 @@
+# hello
+
+# Build Docker Image
+$ docker build --tag hello:1.0.0 .
+
+# Run Docker Container
+$ docker run --publish 50002:3000 --detach --name hello hello:1.0.0
+
+# Run Docker Container interactively
+$ docker run -i -t --publish 50002:3000 --name hello hello:1.0.0 /bin/bash
